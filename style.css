@@ -267,15 +267,6 @@ svg{
     
 }
 
-/* .slider_container{
-    width:15vw;
-    font-size: .5em;
-    position: relative;
-    top: 2%;
-    left: 4.9%;
-    background-color: grey;
-    
-} */
 
 
 
@@ -317,6 +308,7 @@ border: 2px solid #1afdc6;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap:11%;
 }
 
@@ -356,9 +348,8 @@ border: 2px solid #1afdc6;
     position: relative;
     top:11%;
     left: 28%;
-    background-image: url('/assets/media/artists/arijit_singh.jpg');
+    background-image: url('/assets/media/artists/ironman.jpg');
     background-position: center center;
-    background-repeat: no-repeat;
     background-clip: content-box;
     background-size: cover;
     border-radius: 50%;
@@ -408,4 +399,33 @@ border: 2px solid #1afdc6;
     text-decoration: overline;
     font-weight: bolder;
     font-style: oblique;
+}
+
+
+.footer{
+    background-color: rgba(0, 0, 0, .37);
+    width: vmax;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end{
+    position: relative;
+    top:26vh;
+    color: #1afdc6;
+    border:3px solid #1afdc6;
+}
+
+
+#Copyright{
+    position: relative;
+    bottom: 15%;
+    display: block;
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    font-size: 1em;
+    text-wrap: wrap;
+    color: #1afdc6;
 }

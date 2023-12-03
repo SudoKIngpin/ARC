@@ -13,6 +13,7 @@ let updateTimer;
 
 
 
+
 let curr_track = document.createElement('audio'); //audio element 
 
 let track_list = [
@@ -21,16 +22,25 @@ let track_list = [
         image: "/assets/media/songimg/h1.jpg",
         path: "/assets/media/song/hanuman.mp3"
     },
+
     {
         name: "Iron Man Theme",
-        image: "/assets/media/songimg/s1.jpg",
-        path: "/assets/media/song/horror.mp3"
+        image: "/assets/media/songimg/ironman.jpg",
+        path: "/assets/media/song/ironmansong.mp3"
     },
+
     {
-        name: "Horror",
-        image: "/assets/media/songimg/s1.jpg",
-        path: "/assets/media/song/horror.mp3",
+        name: "Krrish",
+        image: "/assets/media/songimg/krrish.jpg",
+        path: "/assets/media/song/krrish.mp3"
     },
+
+    {
+
+        name: "Moye Moye",
+        image: "/assets/media/songimg/moyemoye.jpg",
+        path: "/assets/media/song/moyemoye.mp3"
+    }
 ];
 
 function loadTrack(track_index) {
@@ -38,11 +48,11 @@ function loadTrack(track_index) {
     // resetValues();
     curr_track.src = track_list[track_index].path;
     curr_track.load();
+    track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+    track_name.textContent = track_list[track_index].name;
 }
 
 
-track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
-track_name.textContent = track_list[track_index].name;
 
 loadTrack(track_index);
 
@@ -62,3 +72,32 @@ function pauseTrack() {
     isPlaying = false; //play btn
     playpause_btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512"><path fill="#1afdc6" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>';
 }
+
+
+function nextTrack() {
+    if (track_index < track_list.length - 1)
+        track_index += 1;
+    else track_index = 0;
+    loadTrack(track_index);
+    playTrack();
+}
+
+function prevTrack() {
+    if (track_index > 0)
+        track_index -= 1;
+    else track_index = track_list.length;
+    loadTrack(track_index);
+    playTrack();
+}
+
+
+
+
+
+
+
+
+
+
+
+
