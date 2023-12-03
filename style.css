@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    border-top: 5px solid #18dfe2;
+    border-bottom: 5px solid #18dfe2;
+    /* position: absolute; */
+    padding: 0px 6px;
+    width: 100%;
+
+
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 12%;
+    
+
+}
+
+
+
+.nav ul li {
+    /* font-size: medium; */
+    padding: 4px 2px;
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    color: white;
+    cursor: pointer;
+
+
+
+}
+
+
+.nav img {
+    margin: 11px 10px;
+    height: 12vh;
+    width: 100%;
+    padding: 2px 2px;
+    border-radius: 50%;
+    border: 3px solid #33C3F7;
+
+
+}
+
+.bname {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 45px;
+
+}
+
+.navbtn {
+    color: white;
+    font-family: "Ubuntu";
+    padding: 45px 45px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: medium;
+
+
+}
+
+.navbtn:hover {
+
+    transition: .7s;
+    background-color: #33C3F7;
+}
+
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+    filter: brightness(1.1);
+
+}
+
+
+
+.home {
+    position: relative;
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, .37);
+    /*Look video blackish(reduce transparency) */
+}
+
+
+#con {
+    /* Can't give height in % as parent div "main" has no height  */
+    height: 100vh;
+    /*Viewport height */
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    /*Horizantally center kia*/
+    flex-direction: column;
+    align-items: center;
+    /*Vertically center kia*/
+    text-align: center;
+}
+
+
+#con {
+    font-family: 'Ubuntu', 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+
+#con p {
+    width: 40%;
+    font-weight: 100;
+
+}
+
+#con h2 {
+    font-size: 150px;
+    font-weight: 300;
+    position: relative;
+
+}
+
+#con h4 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+/* .mem{
+    height: 139px;
+    width: 200px;
+    background-color: red;
+} */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+
+#listen {
+    /* position: relative;
+    background-color:rgba(0,0,0,.37); /*Look video blackish(reduce transparency)*/
+
+    /*height: 40vh;
+    width: 86vw;
+    margin-left: 13%;
+    font-family: "Ubuntu";
+    font-size: 3em;
+    border: 4px solid white; */
+
+    /*  CHROME INSPECT SE LIKHa HAI */
+    position: relative;
+    color: #18dfe2;
+    text-align: start;
+    background-color: rgba(0, 0, 0, .37);
+    border-radius: 23px;
+    height: 63vh;
+    margin: 6% 4%;
+    width: 90vw;
+    font-family: "Ubuntu";
+    font-size: 2em;
+    border: 4px solid white;
+}
+
+
+#player {
+    
+    margin-top: 2.4%;
+    margin-bottom: 2.4%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    outline: 2px solid #1afdc6;
+    outline-width: 5px;
+    border-radius: 23px;
+    height: 51vh;
+    left: 74%;
+    width: 289px;
+    top: -25%;
+    right: 61px;
+
+
+}
+
+#bgimgarea {
+    height: 5.5em;
+    width: 5.5em;
+    /* background-color: black; */
+    position: relative;
+    outline: 5px solid white;
+    background-image: url('/assets/media/songimg/h1.jpg');
+    top: 7%;
+    left: 18%;
+    border-radius: 50%;
+    background-size: cover;                                       /*Object cover used with <img src tag {bgsize} used with bgimage properties>*/
+    /* Ensure the background image covers the circular area */
+    background-position: top center;
+    /* Center the background image */
+    background-clip: content-box;
+    background-repeat: no-repeat;
+
+}
+
+
+.icon{
+    display: inline;
+}
+
+svg{
+    height: 9vh;
+    width: 1vw;
+    cursor: pointer;
+}
+
+#iconarea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    top:27%;
+    gap: 10%;
+}
+
+#trackname{
+    font-size: .5em;
+    border-radius: 10%;
+    height: 7vh;
+    width: 11vw;
+    position: relative;
+    text-align: center;
+    padding: 15px 10px;
+    white-space: nowrap;
+    top: 10%;
+    left: 16%;
+    
+}
+
+/* .slider_container{
+    width:15vw;
+    font-size: .5em;
+    position: relative;
+    top: 2%;
+    left: 4.9%;
+    background-color: grey;
+    
+} */
+
+
+
+#part1{
+margin-top: 12%;
+border: 2px solid #1afdc6;
+
+
+}
+
+.lisbox{
+    position: relative;
+    top:23%;
+    left: 2.4%;
+    background-color: red;
+    border-radius: 4px;
+    outline:2px solid  white;
+    padding: 15px 17px;
+    height: 142px;
+    width: 226px;
+}
+
+.lisbox p {
+    font-weight: bold;
+    font-size:.447em;
+    text-align: center;
+    width: 98%;
+}
+
+#About h2{
+    font-family: "Ubuntu";
+
+    font-size: 4.5rem;
+    padding: 3% 4%;
+    
+}
+
+.quadmem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:11%;
+}
+
+.card{
+    height: 45vh;
+    width: 22vw;
+    position: relative;
+    left: 2%;
+    background-color: black;
+    outline: 5px solid #1afdc6;
+    border-radius: 23px;
+
+}
+
+.about{
+    position: relative;
+    color: #18dfe2;
+    text-align: start;
+    text-wrap:wrap;
+    background-color: rgba(0, 0, 0, .37);
+    /* height: 73vh;
+    margin: 6% 4%;
+    width: 93vw; */
+    font-family: "Ubuntu";
+    font-size: 2em;
+
+}
+
+.about h2{
+    text-decoration: underline;
+    text-align: start;
+}
+
+.photo{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top:11%;
+    left: 28%;
+    background-image: url('/assets/media/artists/arijit_singh.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    border-radius: 50%;
+    outline: 4px solid #1afdc6;
+}
+
+.name{
+    position: relative;
+    color: orangered;
+    top:16.6%;
+    left:27%;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-transform: capitalize;
+}
+
+.name p{
+    font-size: 0.7em;
+    font-weight: lighter;
+    width: 55%;
+    text-align:left;
+}
+
+.name button{
+    background-color: blue;
+    color: #fff;
+    padding: 3% 3% ;
+    font-size: .56em;
+    font-weight: bold;
+    border-radius: 26px;
+    text-align: center;
+    border:2px solid white;
+    margin-top: 11px;
+    margin-left: 8.9%;
+    cursor: pointer;
+
+}
+.name button:hover{
+    transition: .7s ease-in;
+    background-color: #1afdc6;
+}
+
+.name span{
+    color: #1afdc6;
+    font-size: .7em;
+    text-align: center;
+    text-decoration: overline;
+    font-weight: bolder;
+    font-style: oblique;
+}
