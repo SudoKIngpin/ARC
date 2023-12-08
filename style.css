@@ -112,10 +112,6 @@ video {
     /*Look video blackish(reduce transparency) */
 }
 
-.home h2{
-    z-index: 9;
-
-}
 
 #con {
     /* Can't give height in % as parent div "main" has no height  */
@@ -152,6 +148,8 @@ video {
     position: relative;
 
 }
+
+
 
 #con h4 {
     font-size: 40px;
